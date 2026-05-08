@@ -3,7 +3,7 @@
 $server = new Swoole\WebSocket\Server('0.0.0.0' , 8888);
 
 
-// 多端口监听，http服务，提供协程环境
+// 多端口监听，http服务，提供协程环境 后面的文字是测试的 不影响项目
 $http = $server->listen('0.0.0.0' , 9999 , SWOOLE_SOCK_TCP);
 
 // 协程环境，将数据保存到redis
